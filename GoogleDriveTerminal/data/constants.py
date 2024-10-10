@@ -5,7 +5,7 @@ from googleapiclient.discovery import build
 
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
-SERVICE_ACCOUNT_FILE = '/kaggle/working/GoogleDriveTerminal/data/service_account_access.json'
+SERVICE_ACCOUNT_FILE = '/kaggle/working/custom_e2tts/GoogleDriveTerminal/data/service_account_access.json'
 
 CREDENTIALS = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 SERVICE = build('drive', 'v3', credentials=CREDENTIALS)
